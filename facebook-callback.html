@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook Callback</title>
+  <script>
+    const params = new URLSearchParams(window.location.hash.substring(1));
+    const accessToken = params.get('access_token');
+
+    if (accessToken) {
+      localStorage.setItem('facebookAccessToken', accessToken);
+
+      window.location.href = '/mainpage.html';
+    } else {
+      console.error('Login failed or access token missing.');
+      alert('Something went wrong during login.');
+    }
+  </script>
+</head>
+<body>
+  <h1>Processing Facebook Login...</h1>
+</body>
+</html>

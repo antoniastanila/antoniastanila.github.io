@@ -1,0 +1,12 @@
+# Exclude folderul node_modules
+node_modules/
+
+# Exclude log-uri și fișiere temporare
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env
+
+# Exclude fișiere generate automat de sistemele de operare
+.DS_Store
+Thumbs.db

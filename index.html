@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    /* Stilizare generală */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    h2 {
+        color: #3b5998;
+    }
+
+   /* Stil pentru butonul de Facebook */
+    .facebook-button {
+      background-color: #3b5998;
+      color: white;
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .facebook-button:hover {
+      background-color: #4c70ba;
+    }
+
+    /* Stil pentru butonul de email */
+    .email-button {
+      background-color: #4caf50;
+      color: white;
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .email-button:hover {
+      background-color: #45a049;
+    }
+
+    /* Containerul pentru login */
+    .login-container {
+      background: white;
+      padding: 20px 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+    }
+    /* Titlu */
+    .login-container h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    /* Input-uri */
+    .login-container input[type="email"],
+    .login-container input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    /* Butonul de login */
+    .login-container button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .login-container button:hover {
+      background-color: #45a049;
+    }
+    /* Linkul "Forgot Password?" */
+    .login-container a {
+      display: block;
+      margin-top: 10px;
+      color: #007bff;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .login-container a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h1>Login</h1>
+    <form action="mainpage.html" method="GET">
+      <input type="email" name="email" placeholder="Email Address" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <button type="submit">Log In with Email</button>
+      <a href="#">Forgot Password?</a>
+    </form>
+
+    <h2>Or Log In with Facebook</h2>
+    <button class="facebook-button" onclick="loginWithFacebook()">Log In with Facebook</button>
+    
+    <p id="profile"></p>
+  </div>
+
+  <script src="facebook-login.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beginner Level</title>
+  <style>
+    /* Stilizare generală */
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f9f0f7; /* Fundal roz deschis */
+      color: #4a154b; /* Text mov închis */
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 32px;
+      color: #d72672; /* Roz intens */
+      margin-bottom: 20px;
+    }
+
+    /* Secțiune Progress Bar */
+    .progress-section {
+      margin: 20px auto;
+      padding: 20px;
+      background: #ffebf0; /* Roz deschis */
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+    }
+
+    .progress-section h2 {
+      margin-bottom: 10px;
+      font-size: 24px;
+    }
+
+    .progress-bar-container {
+      width: 100%;
+      background-color: #e0d4e3; /* Mov deschis */
+      border-radius: 10px;
+      height: 20px;
+      overflow: hidden;
+    }
+
+    .progress-bar {
+      width: 0%; /* Progress setat la 0% */
+      height: 100%;
+      background-color: #b10f2e; /* Vișiniu */
+      border-radius: 10px;
+    }
+
+    /* Secțiunea Test */
+    .test-section {
+      margin: 30px auto;
+      padding: 20px;
+      background: #fbe4f1; /* Roz pal */
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+    }
+
+    .test-section h2 {
+      margin-bottom: 15px;
+      font-size: 24px;
+      color: #6a0572; /* Mov închis */
+    }
+
+    .test-section p {
+      font-size: 16px;
+      color: #4a154b;
+      margin-bottom: 20px;
+    }
+
+    .test-section a {
+      text-decoration: none;
+      color: white;
+      background-color: #d72672; /* Roz intens */
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .test-section a:hover {
+      background-color: #b10f2e; /* Vișiniu */
+    }
+
+    /* Butonul de întoarcere */
+    .back-button {
+      margin-top: 30px;
+      text-decoration: none;
+      color: white;
+      background-color: #6a0572; /* Mov */
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .back-button:hover {
+      background-color: #4a154b; /* Mov închis */
+    }
+  </style>
+</head>
+<body>
+  <h1>Beginner Level</h1>
+
+  <!-- Secțiunea Progress Bar -->
+  <div class="progress-section">
+    <h2>Progress Bar</h2>
+    <div class="progress-bar-container">
+      <div class="progress-bar"></div>
+    </div>
+    <p>Current Progress: 0%</p>
+  </div>
+
+  <!-- Secțiunea Test -->
+  <div class="test-section">
+    <h2>Take Test!</h2>
+    <p>Find out your starting level and begin learning French in the most efficient way!</p>
+    <a href="beginner-test.html">Start the Test</a>
+  </div>
+
+  <!-- Buton de întoarcere -->
+  <a href="mainpage.html" class="back-button">Back to Main Page</a>
+</body>
+</html>
